@@ -3,7 +3,8 @@
 #include <math.h>
 void main()
 {
-	int n,x;
+	int n;
+	float x;
 	printf("Menu:\n");
 	printf("1-decimeter\n");
 	printf("2-kilometer\n");
