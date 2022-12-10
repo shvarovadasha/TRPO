@@ -4,7 +4,7 @@
 #define n 15
 int main ()
 {
-  int a[n], i, sum=0, max=0, min=0;
+  int a[n], i, sum=0, imax=0, imin=0;
   srand (time (NULL));
   for (i=0; i<n; i++)
   {
@@ -21,16 +21,16 @@ int main ()
    min = abs(a[0]);
    for (i=0; i<n; i++)
    {
-   	 if (abs(a[i]) < abs(max))
+   	 if (fabs(a[i]) > fabs(a[imax]))
    	 {
-   	 	max = a[i];
+   	 	imax = i;
 	 }
-	 if (abs(a[i]) < abs(max))
+	if (fabs(a[i]) < fabs(a[imin]))
 	 {
-	 	min = a[i];
+	 	imin = i;
 	 }
    }
-   printf(" The maximum absolute value of element of the array: %d\n", &max);
-   printf(" The minimum absolute value of element of the array: %d\n", &min);
+   printf(" The maximum absolute value of element of the array: %d\n", &imax);
+   printf(" The minimum absolute value of element of the array: %d\n", &imin);
 return (0);
 }
