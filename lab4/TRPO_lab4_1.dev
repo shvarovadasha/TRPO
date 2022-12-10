@@ -1,6 +1,6 @@
 [Project]
-filename=TRPO_lab4_1.1.dev
-name=TRPO_lab4_1.1
+filename=TRPO_lab4_1.dev
+name=TRPO_lab4_1
 Type=1
 Ver=2
 ObjFiles=
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=main.c
+FileName=maintrpo41.c
 CompileCpp=0
 Folder=
 Compile=1
